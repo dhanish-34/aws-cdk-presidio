@@ -1,0 +1,76 @@
+{
+  "vpc-provider:account=528922625383:filter.tag:Name=cg-assessments-vpc-us-east-1:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-02cb160e3bda472bc",
+    "vpcCidrBlock": "10.120.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0106f25c0bba872b3",
+            "cidr": "10.120.0.0/26",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0784e390d310210e4"
+          },
+          {
+            "subnetId": "subnet-06cb94b9e893681e5",
+            "cidr": "10.120.0.64/26",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-0784e390d310210e4"
+          }
+        ]
+      },
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-05cfd424ded20b085",
+            "cidr": "10.120.0.128/26",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-0a227402e48dc5bd5"
+          },
+          {
+            "subnetId": "subnet-072c46024bacfd71e",
+            "cidr": "10.120.0.192/26",
+            "availabilityZone": "us-east-1d",
+            "routeTableId": "rtb-0a227402e48dc5bd5"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=528922625383:region=us-east-1:securityGroupId=sg-0bd77d109dd652090": {
+    "securityGroupId": "sg-0bd77d109dd652090",
+    "allowAllOutbound": false
+  },
+  "security-group:account=528922625383:region=us-east-1:securityGroupId=sg-02af75d1c4a63eeed": {
+    "securityGroupId": "sg-02af75d1c4a63eeed",
+    "allowAllOutbound": false
+  },
+  "vpc-provider:account=528922625383:filter.tag:Name=default:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-005440993d93cf09d",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0582ba2543a088175",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-east-1a",
+            "routeTableId": "rtb-0223c02f0242d7e98"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=528922625383:region=us-east-1:securityGroupId=sg-0e1b27a5678576e29": {
+    "securityGroupId": "sg-0e1b27a5678576e29",
+    "allowAllOutbound": false
+  }
+}
